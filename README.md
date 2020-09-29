@@ -1,4 +1,4 @@
-# PRÁCTICA 6. USO DE LA CLASE DriverManager DE JDBC PARA ACCEDER A MySQL.
+# PRÁCTICA 7. USO DE LA CLASE DataSource EN JDBC PARA ACCEDER A MySQL.
 
 ## COPIA DEL REPOSITORIO REMOTO EN SU COMPUTADORA LOCAL
 Como primer paso, será necesario crear una copia local del repositorio remoto creado en Github al aceptar la tarea. Para ello, es necesario hacer los siguientes pasos:
