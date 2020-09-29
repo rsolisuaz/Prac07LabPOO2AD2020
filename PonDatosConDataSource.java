@@ -134,7 +134,7 @@ public class PonDatosConDataSource {
     public void llenaTablaSedeConcurso(Connection con) {
         // TODO Completar el codigo del metodo llenaTablaSedeConcurso
 
-    }  // fin del método llenaTablaSedeConcurso()
+    }  // fin del metodo llenaTablaSedeConcurso()
 
 
 }
