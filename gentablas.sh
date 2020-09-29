@@ -1,0 +1,4 @@
+matricula=`grep -E "@author  [0-9]{8}" PonDatosConDataSource.java | sed 's/^ *\@author *\([0-9]*\)/\1/'`
+echo "CREATE TABLE sede_$matricula (id_sede INT PRIMARY KEY AUTO_INCREMENT, nombre_sede VARCHAR(50) NOT NULL,id_institucion_sede INT NOT NULL, email_director_sede CHAR(40) NOT NULL, url_sede VARCHAR(200));" > tablas.sql
+echo "CREATE TABLE concurso_$matricula (id_concurso INT PRIMARY KEY AUTO_INCREMENT,nombre_concurso VARCHAR(100) NOT NULL,fecha_concurso DATE NOT NULL,fecha_inicio_registro DATE NOT NULL,fecha_fin_registro DATE NOT NULL);" >> tablas.sql
+echo "CREATE TABLE sede_concurso_$matricula (id_sede_concurso INT PRIMARY KEY AUTO_INCREMENT, id_sede INT NOT NULL, id_concurso INT NOT NULL);" >> tablas.sql
